@@ -15,7 +15,7 @@
 
 <div class="container mt-5">
     <div class="form-container">
-        <form action="/save">
+        <form action="/save" method="post">
             <div class="form-row">
                 <div class="form-group col-md-6 mt-4">
                     <label for="id">Customer ID</label>

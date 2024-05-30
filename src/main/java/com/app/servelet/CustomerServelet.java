@@ -2,7 +2,6 @@ package com.app.servelet;
 
 import com.app.controller.CustomerController;
 import com.app.entity.Customer;
-import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -11,7 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@Slf4j
 @WebServlet("/save")
 public class CustomerServelet extends HttpServlet {
     @Override
