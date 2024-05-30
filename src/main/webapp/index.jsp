@@ -1,3 +1,6 @@
+<%@ page import="com.app.controller.CustomerController" %>
+<%@ page import="com.app.entity.Customer" %>
+<%@ page import="java.util.List" %>
 <html>
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -8,6 +11,7 @@
     <div class="row">
         <div class="col-12">
             <table class="table table-hover">
+                <tbody>
                 <thead>
                 <tr>
                     <th>#Id</th>
@@ -17,19 +21,30 @@
                     <th>Remove Student</th>
                     <th>Update Student</th>
                 </tr>
+                </thead>
+                </tbody>
+                <%
+                    List<Customer> allCustomers = new CustomerController().findAllCustomer();
+                    for(Customer c: allCustomers){
+                %>
+                <tbody>
                 <tr>
-                    <td>1001</td>
-                    <td>Nimal</td>
-                    <td>Colombo</td>
-                    <td>250000</td>
+                    <td><%=c.getId() %></td>
+                    <td><%=c.getName() %></td>
+                    <td><%=c.getAddress() %></td>
+                    <td><%=c.getSalary() %></td>
                     <td>
-                        <button class="btn btn-danger">Delete</button>
+                        <a class="btn btn-danger">Delete</a>
                     </td>
                     <td>
-                        <button class="btn btn-success">Update</button>
+                        <a href="editCustomer.jsp?id=<%=c.getId()%>" class="btn btn-success">Update</a>
                     </td>
                 </tr>
-                </thead>
+                <%
+                    }
+                %>
+                </tbody>
+
             </table>
         </div>
     </div>

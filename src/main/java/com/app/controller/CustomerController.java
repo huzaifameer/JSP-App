@@ -17,15 +17,31 @@ public class CustomerController {
         return true;
     }
     public boolean updateCustomer(Customer customer){
-        return false;
+        try(Session session = HibernateUtil.getSession()){
+            Transaction transaction = session.beginTransaction();
+            Customer selectedCustomer = session.get(Customer.class,customer.getId());
+
+            if (selectedCustomer ==null){
+                return false;
+            }
+            selectedCustomer.setAddress(customer.getAddress());
+            selectedCustomer.setName(customer.getName());
+            selectedCustomer.setSalary(customer.getSalary());
+            transaction.commit();
+        }
+        return true;
     }
     public boolean deleteCustomer(long id){
         return false;
     }
     public Customer findCustomer(long id){
-        return null;
+        try(Session session = HibernateUtil.getSession()){
+            return session.get(Customer.class,id);
+        }
     }
     public List<Customer> findAllCustomer(){
-        return null;
+        try(Session session = HibernateUtil.getSession()){
+            return session.createQuery("FROM Customer", Customer.class).list();
+        }
     }
 }
