@@ -34,7 +34,7 @@
                     <td><%=c.getAddress() %></td>
                     <td><%=c.getSalary() %></td>
                     <td>
-                        <a class="btn btn-danger">Delete</a>
+                        <a href="deleteCustomer.jsp?id=<%=c.getId()%>" class="btn btn-danger">Delete</a>
                     </td>
                     <td>
                         <a href="editCustomer.jsp?id=<%=c.getId()%>" class="btn btn-success">Update</a>

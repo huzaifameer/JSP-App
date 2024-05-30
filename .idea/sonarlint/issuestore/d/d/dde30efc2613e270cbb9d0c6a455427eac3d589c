@@ -1,0 +1,10 @@
+
+¢
+java:S1989"ZHandle the following exception that could be thrown by "parseLong": NumberFormatException.(òÁÞŠùÿÿÿÿ8†€¼Ðü1J$3f742593-6499-42fc-bc8d-080a4b832cc4
+¤
+java:S1989"\Handle the following exception that could be thrown by "parseDouble": NumberFormatException.(òÁÞŠùÿÿÿÿ8†€¼Ðü1J$beb1b21e-bff9-49fe-a579-cf2be1222d06
+r	java:S106"+Replace this use of System.out by a logger.(‰Øùéúÿÿÿÿ8ˆ€¼Ðü1J$890dbb00-19ba-41f0-910b-07a9b1e169ab
+r	java:S106"+Replace this use of System.out by a logger.(†ëŽ…øÿÿÿÿ8‰€¼Ðü1J$4e9d3605-f205-4f32-b6f3-92cf72111b30
+–
+java:S1989"SHandle the following exception that could be thrown by "sendRedirect": IOException.(ÿÝ¤š8‰€¼Ðü1J$fc5432dd-30ef-4962-9680-170f3fac6dd8
+r	java:S106"+Replace this use of System.out by a logger.(ÇÖ¿ÿþÿÿÿÿ8‰€¼Ðü1J$37acf9a7-d121-4a55-9672-e5c09b6449c9

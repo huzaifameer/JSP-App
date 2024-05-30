@@ -1,0 +1,6 @@
+
+†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$088009ed-a1cf-41e3-b331-e5197bb52010
+•
+java:S3008"ZRename this field "SESSION_FACTORY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(›ñ·GJ$9f930235-cda5-4aa2-9be8-f0e22ceb0d52
+{
+java:S1118":Add a private constructor to hide the implicit public one.(‡ŒïøþÿÿÿÿJ$0f0af7d2-f619-4ddc-a1f9-cce4e6722a2a

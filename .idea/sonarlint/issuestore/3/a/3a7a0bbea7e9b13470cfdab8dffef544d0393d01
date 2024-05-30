@@ -1,0 +1,11 @@
+
+
+java:S1989"ZHandle the following exception that could be thrown by "parseLong": NumberFormatException.(à„«¨8¸‹ÖÒü1J$5fa730ee-5f81-48b5-821f-475baf588c59
+m	java:S106"+Replace this use of System.out by a logger.(—ºí¾8º‹ÖÒü1J$cb14abbe-3169-4d2b-be2e-a8194dba5613
+›
+java:S1989"SHandle the following exception that could be thrown by "sendRedirect": IOException.(Ë…ùèÿÿÿÿÿ8»‹ÖÒü1J$956c051f-147a-49c0-84cf-1f76e6b60bb9
+m	java:S106"+Replace this use of System.out by a logger.(¡ÎéÀ8»‹ÖÒü1J$94e3b96a-c36d-411a-967a-68415dd94f38
+|
+java:S1128"4Remove this unused import 'com.app.entity.Customer'.(¯¡¯·üÿÿÿÿ8¸€ÓÒü1J$ee84681d-1f11-4f37-9d6b-de0d6e182ad0
+~
+java:S1128";Remove this unused import 'javax.servlet.ServletException'.(Š‰™Œ8¸€ÓÒü1J$30b5be3a-b53b-45d6-b042-355531b0140e

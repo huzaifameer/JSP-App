@@ -32,7 +32,18 @@ public class CustomerController {
         return true;
     }
     public boolean deleteCustomer(long id){
-        return false;
+        try(Session session = HibernateUtil.getSession()){
+            Transaction transaction = session.beginTransaction();
+            Customer selectedCustomer = session.get(Customer.class,id);
+
+            if (selectedCustomer==null) {
+                return false;
+            }
+            session.delete(selectedCustomer);
+            transaction.commit();
+            return true;
+        }
+
     }
     public Customer findCustomer(long id){
         try(Session session = HibernateUtil.getSession()){
